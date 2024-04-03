@@ -1,2 +1,5 @@
-# vitest-react-native-testing-library-demo
-A demo of react native testing library vitest
+# react-native-testing-library-demo
+
+## Docs
+
+https://callstack.github.io/react-native-testing-library/

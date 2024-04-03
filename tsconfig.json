@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "module": "ES2020",
+    "skipLibCheck": true,
+    "strict": true,
+    "moduleResolution": "NodeNext",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "lib": ["es2018", "DOM", "dom.iterable"],
+    "resolvePackageJsonExports": true
+  }
+}
