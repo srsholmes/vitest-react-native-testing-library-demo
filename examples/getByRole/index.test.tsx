@@ -9,7 +9,7 @@ import { Button, Text, View } from 'react-native';
 describe('getByRole Passing tests', () => {
   test('View is not accessible by default', () => {
     const view = render(
-      <View accessible={true} accessibilityRole="button">
+      <View accessible={true} role="button">
         <Text>Hello, world!</Text>
       </View>,
     );
@@ -17,7 +17,7 @@ describe('getByRole Passing tests', () => {
   });
 
   test('Text is accessible by default', () => {
-    const view = render(<Text accessibilityRole="button">Hello, world</Text>);
+    const view = render(<Text role="button">Hello, world</Text>);
     expect(view.getByRole('button')).toBeTruthy();
   });
 
@@ -35,7 +35,7 @@ describe('getByRole Passing tests', () => {
 describe.skip('getByRole Failing tests', () => {
   test('accessible default for Views', () => {
     const view = render(
-      <View accessibilityRole="button">
+      <View role="button">
         <Text>Hello, world!</Text>
       </View>,
     );
@@ -44,7 +44,7 @@ describe.skip('getByRole Failing tests', () => {
 
   test('accessible false for Text', () => {
     const view = render(
-      <Text accessible={false} accessibilityRole="button">
+      <Text accessible={false} role="button">
         Hello, world
       </Text>,
     );
