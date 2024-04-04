@@ -14,7 +14,7 @@ To get started with the project, clone the repository and install the dependenci
 ```bash
 git clone https://github.com/srsholmes/vitest-react-native-testing-library-demo.git
 cd vitest-react-native-testing-library-demo
-bun install
+pnpm install
 ```
 
 ## Running Tests
@@ -22,7 +22,7 @@ bun install
 To run the tests, use the following command:
 
 ```bash
-bun run test
+pnpm run test
 ```
 
 ## Examples
